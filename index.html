@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERATORS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ada7606d-3795-4d4f-aac7-1508e476e1d4&lang=ru_RU" type="text/javascript">
+    </script>
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="images/logo.svg" alt="">
+        <div class="header__body">
+            <div class="header__left">
+                <ul class="header__navigation">
+                    <li class="navigation__item child__menu">
+                        <a href="catalog.html">Каталог</a>
+                        <div class="subnav__wrap">
+                          <ul class="more__navigation">
+                            <li class="more__navigation__item"><a href="">Барные стулья</a></li>
+                            <li class="more__navigation__item"><a href="">Для кухни</a></li>
+                            <li class="more__navigation__item"><a href="">Для кафе, ресторанов</a></li>
+                            <li class="more__navigation__item"><a href="">Мягкие стулья</a></li>
+                            <li class="more__navigation__item"><a href="">Для офиса</a></li>
+                            <li class="more__navigation__item"><a href="">Распродажа</a></li>
+                            <li class="more__navigation__item"><a href="">Столы</a></li>
+                        </ul>
+                        </div> 
+                    </li>
+                    <li class="navigation__item"><a href="">Контакты</a></li>
+                    <li class="navigation__item"><a href="about.html">О компании</a></li>
+                    <li class="navigation__item"><a href="">Дилерам и дизайнерам</a></li>
+                    <li class="navigation__item"><a href="">Корзина</a></li>   
+                </ul>
+            </div>
+            <div class="header__right">
+                <div class="header__location">
+                    <img class="location__img" src="images/location.svg" alt="">
+                    <span class="location__adress">г. Чебоксары,</br>Складской пр. 10</span>
+                </div>
+                <span class="header__phone">+7 996 643-43-30</span>
+                <button class="header__button">
+                    <span class="button__text">
+                        Заказать звонок
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="feautures">
+        <div class="container">
+            <div class="feautures__header">
+                <h1 class="header__title">Дизайнерские стулья и столы</h1>
+            </div>
+            <div class="feautures__body">
+                <div class="body__img">
+                    <img class="img__chair" src="images/1chair.png" alt="">
+                    <button id="circle1" data-button-id="1" class="img__circle img__circle_1 circle__active"></button>
+                    <button id="circle2" data-button-id="2" class="img__circle img__circle_2"></button>
+                    <button id="circle3" data-button-id="3" class="img__circle img__circle_3"></button>
+                    <button id="circle4" data-button-id="4" class="img__circle img__circle_4"></button>
+                </div>
+                <div class="body__wrap">
+                        <h2 class="body__title">Устойчивость</h2>
+                    <div class="body__text">
+                        <h5>Ноженьки</h5>
+                        <p>Мы используем ткани исключительно хорошего качества, плотностью не менее 400 г на квадратный метр. Такая ткань устойчива к истиранию, обладает антивандальными свойствами.  Мы используем большой спектр тканей, начиная от велюра и микровелюра, заканчивая искусственной замшей, экокожей и прочими. Цветовая палитра также очень обширна.</p>
+                    </div>
+                    <div class="feautures__slider">
+                        <hr id="slider__item_1" data-slider-id="1" class="slider__item active">
+                        <hr id="slider__item_2" data-slider-id="2" class="slider__item">
+                        <hr id="slider__item_3" data-slider-id="3" class="slider__item">
+                        <hr id="slider__item_4" data-slider-id="4" class="slider__item">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feautures__footer">
+            <div class="container">
+                <div class="feautures__footer_row">
+                    <h2 class="feautures__footer_title">Бесплатная доставка</h2>
+                    <a class="feautures__footer_button" href="#delivery">Подробнее</a>
+                </div>
+                <ul class="feautures__footer_row">
+                    <li class="row__item">При оплате в шоу-руме</li>
+                    <li class="row__item">Доставим до терминала выдачи заказов в вашем городе</li>
+                </ul>
+            </div>
+        </div>
+        <div class="feautures__background"></div>
+    </div>
+    <div class="sales">
+        <div class="container">
+            <h2 class="sales__title">Скидки</h2>
+            <div class="sales__body">
+                <div class="sales__item">
+                  <div class="images">
+                    <img src="images/sale__img1.png">
+                    <img src="images/sale__img2.png">
+                    <img src="images/sale__img3.png">
+                    <img src="images/sale__img4.png">
+                  </div>
+                    <h5 class="item__title">ZENA</h5>
+                    <p class="item__text">мягкий стул, барный стул, розовый, модерн</p>
+                    <div class="item__footer">
+                        <div class="footer__wrap">
+                            <div class="item__price">
+                                <p class="item__price_last">38 200 ₽</p>
+                                <p class="item__price_new">12 600 ₽</p>
+                            </div>
+                            <a class="row__detailed" href="#">Подробнее ></a>
+                        </div>
+                        <button class="item__button">В корзину</button>
+                    </div>
+                    <img src="images/sale__icon.png" alt="" class="item__sale_icon">
+                </div>
+
+                <div class="sales__item">
+                    <img class="item__img" src="images/sale__img2.png" alt="">
+                    <h5 class="item__title">TERRA CROSS 360°</h5>
+                    <p class="item__text">мягкий стул, барный стул, розовый, модерн</p>
+                    <div class="item__footer">
+                        <div class="footer__wrap">
+                            <div class="item__price">
+                                <p class="item__price_last">36 490 ₽</p>
+                                <p class="item__price_new">28 690 ₽</p>
+                            </div>
+                            <a class="row__detailed" href="#">Подробнее ></a>
+                        </div>
+                        <button class="item__button">В корзину</button>
+                    </div>
+                    <img src="images/sale__icon.png" alt="" class="item__sale_icon">
+                </div>
+                
+                <div class="sales__item">
+                    <img class="item__img" src="images/sale__img3.png" alt="">
+                    <h5 class="item__title">TERRA </h5>
+                    <p class="item__text">мягкий стул, барный стул, синий, модерн</p>
+                    <div class="item__footer">
+                        <div class="footer__wrap">
+                            <div class="item__price">
+                                <p class="item__price_last">14 200 ₽</p>
+                                <p class="item__price_new">10 600 ₽</p>
+                            </div>
+                            <a class="row__detailed" href="#">Подробнее ></a>
+                        </div>
+                        <button class="item__button">В корзину</button>
+                    </div>
+                    <img src="images/sale__icon.png" alt="" class="item__sale_icon">
+                </div>
+                
+                <div class="sales__item">
+                    <img class="item__img" src="images/sale__img4.png" alt="">
+                    <h5 class="item__title">CROSS</h5>
+                    <p class="item__text">мягкий стул, для офиса, серый, норд</p>
+                    <div class="item__footer">
+                        <div class="footer__wrap">
+                            <div class="item__price">
+                                <p class="item__price_last">18 200 ₽</p>
+                                <p class="item__price_new">7 600 ₽</p>
+                            </div>
+                            <a class="row__detailed" href="#">Подробнее ></a>
+                        </div>
+                        <button class="item__button">В корзину</button>
+                    </div>
+                    <img src="images/sale__icon.png" alt="" class="item__sale_icon">
+                </div>
+
+                <div class="sales__item">
+                    <img class="item__img" src="images/sale__img1.png" alt="">
+                    <h5 class="item__title">ZENA</h5>
+                    <p class="item__text">мягкий стул, барный стул, розовый, модерн</p>
+                    <div class="item__footer">
+                        <div class="footer__wrap">
+                            <div class="item__price">
+                                <p class="item__price_last">38 200 ₽</p>
+                                <p class="item__price_new">12 600 ₽</p>
+                            </div>
+                            <a class="row__detailed" href="#">Подробнее ></a>
+                        </div>
+                        <button class="item__button">В корзину</button>
+                    </div>
+                    <img src="images/sale__icon.png" alt="" class="item__sale_icon">
+                </div>
+
+                <div class="sales__item">
+                    <img class="item__img" src="images/sale__img2.png" alt="">
+                    <h5 class="item__title">TERRA CROSS 360°</h5>
+                    <p class="item__text">мягкий стул, барный стул, розовый, модерн</p>
+                    <div class="item__footer">
+                        <div class="footer__wrap">
+                            <div class="item__price">
+                                <p class="item__price_last">36 490 ₽</p>
+                                <p class="item__price_new">28 690 ₽</p>
+                            </div>
+                            <a class="row__detailed" href="#">Подробнее ></a>
+                        </div>
+                        <button class="item__button">В корзину</button>
+                    </div>
+                    <img src="images/sale__icon.png" alt="" class="item__sale_icon">
+                </div>
+                
+                <div class="sales__item">
+                    <img class="item__img" src="images/sale__img3.png" alt="">
+                    <h5 class="item__title">TERRA </h5>
+                    <p class="item__text">мягкий стул, барный стул, синий, модерн</p>
+                    <div class="item__footer">
+                        <div class="footer__wrap">
+                            <div class="item__price">
+                                <p class="item__price_last">14 200 ₽</p>
+                                <p class="item__price_new">10 600 ₽</p>
+                            </div>
+                            <a class="row__detailed" href="#">Подробнее ></a>
+                        </div>
+                        <button class="item__button">В корзину</button>
+                    </div>
+                    <img src="images/sale__icon.png" alt="" class="item__sale_icon">
+                </div>
+                
+                <div class="sales__item">
+                    <img class="item__img" src="images/sale__img4.png" alt="">
+                    <h5 class="item__title">CROSS</h5>
+                    <p class="item__text">мягкий стул, для офиса, серый, норд</p>
+                    <div class="item__footer">
+                        <div class="footer__wrap">
+                            <div class="item__price">
+                                <p class="item__price_last">18 200 ₽</p>
+                                <p class="item__price_new">7 600 ₽</p>
+                            </div>
+                            <a class="row__detailed" href="#">Подробнее ></a>
+                        </div>
+                        <button class="item__button">В корзину</button>
+                    </div>
+                    <img src="images/sale__icon.png" alt="" class="item__sale_icon">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="catalog">
+        <div class="container">
+            <h2 class="catalog__title">Каталог</h2>
+            <div class="catalog__categories">
+                <div class="categories__row">
+                    <button class="catalog__button"><div class="img__wrap"><img src="images/categories__img5.png" alt=""></div>Барные</button>
+                    <button class="catalog__button"><div class="img__wrap"><img src="images/categories__img4.png" alt=""></div>Для кухни</button>
+                    <button class="catalog__button catalog__button_active"><div class="img__wrap"><img src="images/categories__img6.png" alt=""></div>Распродажа</button>
+                    <button class="catalog__button"><div class="img__wrap"><img src="images/categories__img4.png" alt=""></div>Для кафе и ресторанов</button></div>
+                <div class="categories__row">
+                    <button class="catalog__button"><div class="img__wrap"><img src="images/categories__img1.png" alt=""></div>Для салонов красоты</button>
+                    <button class="catalog__button"><div class="img__wrap"><img src="images/categories__img2.png" alt=""></div>Мягкие стулья</button>
+                    <button class="catalog__button"><div class="img__wrap"><img src="images/categories__img4.png" alt=""></div>Для офиса</button>
+                    <button class="catalog__button"><div class="img__wrap"><img src="images/categories__img3.png" alt=""></div>Столы</button>
+                </div>
+            </div>
+            <div class="catalog__body">
+                <div class="catalog__item">
+                    <img class="item__img" src="images/catalog__img1.png" alt="">
+                    <h5 class="item__title">CROSS</h5>
+                    <p class="item__text">мягкий стул, для офиса, серый, норд</p>
+                    <div class="item__footer">
+                        <div class="footer__wrap">
+                            <p class="item__price">30 650 ₽</p>
+                            <a class="row__detailed" href="#">Подробнее ></a>
+                        </div>
+                        <button class="item__button">В корзину</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img class="item__img" src="images/catalog__img2.png" alt="">
+                    <h5 class="item__title">IONA</h5>
+                    <p class="item__text">мягкий стул, барный стул, розовый, модерн</p>
+                    <div class="item__footer">
+                        <div class="footer__wrap">
+                            <p class="item__price">30 650 ₽</p>
+                            <a class="row__detailed" href="#">Подробнее ></a>
+                        </div>
+                        <button class="item__button">В корзину</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img class="item__img" src="images/catalog__img3.png" alt="">
+                    <h5 class="item__title">VITYA</h5>
+                    <p class="item__text">мягкий стул, для кухни, бежевый, скандинавия</p>
+                    <div class="item__footer">
+                        <div class="footer__wrap">
+                            <p class="item__price">30 650 ₽</p>
+                            <a class="row__detailed" href="#">Подробнее ></a>
+                        </div>
+                        <button class="item__button">В корзину</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img class="item__img" src="images/catalog__img4.png" alt="">
+                    <h5 class="item__title">TERRA DENIS 360°</h5>
+                    <p class="item__text">для офиса, для бара, черный, хайтек</p>
+                    <div class="item__footer">
+                        <div class="footer__wrap">
+                            <p class="item__price">30 650 ₽</p>
+                            <a class="row__detailed" href="#">Подробнее ></a>
+                        </div>
+                        <button class="item__button">В корзину</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img class="item__img" src="images/catalog__img1.png" alt="">
+                    <h5 class="item__title">CROSS</h5>
+                    <p class="item__text">мягкий стул, для офиса, серый, норд</p>
+                    <div class="item__footer">
+                        <div class="footer__wrap">
+                            <p class="item__price">30 650 ₽</p>
+                            <a class="row__detailed" href="#">Подробнее ></a>
+                        </div>
+                        <button class="item__button">В корзину</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img class="item__img" src="images/catalog__img2.png" alt="">
+                    <h5 class="item__title">IONA</h5>
+                    <p class="item__text">мягкий стул, барный стул, розовый, модерн</p>
+                    <div class="item__footer">
+                        <div class="footer__wrap">
+                            <p class="item__price">30 650 ₽</p>
+                            <a class="row__detailed" href="#">Подробнее ></a>
+                        </div>
+                        <button class="item__button">В корзину</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img class="item__img" src="images/catalog__img3.png" alt="">
+                    <h5 class="item__title">VITYA</h5>
+                    <p class="item__text">мягкий стул, для кухни, бежевый, скандинавия</p>
+                    <div class="item__footer">
+                        <div class="footer__wrap">
+                            <p class="item__price">30 650 ₽</p>
+                            <a class="row__detailed" href="#">Подробнее ></a>
+                        </div>
+                        <button class="item__button">В корзину</button>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img class="item__img" src="images/catalog__img4.png" alt="">
+                    <h5 class="item__title">TERRA DENIS 360°</h5>
+                    <p class="item__text">для офиса, для бара, черный, хайтек</p>
+                    <div class="item__footer">
+                        <div class="footer__wrap">
+                            <p class="item__price">30 650 ₽</p>
+                            <a class="row__detailed" href="#">Подробнее ></a>
+                        </div>
+                        <button class="item__button">В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="adresses">
+        <div class="container">
+            <h2 class="adresses__title">Адреса шоурумов</h2>
+            <div class="adresses__body">
+                <div class="adresses__item">
+                    <h5 class="city">Брянск</h5>
+                    <ul>
+                        <li>
+                            <span class="showroom">«АЭРОПАРК»</span>
+                            <span class="adress">,ул. Объездная, 30 (2 этаж)</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="adresses__item">
+                    <h5 class="city">Екатеринбург</h5>
+                    <ul>
+                        <li>
+                            <span class="showroom">«WOW HOUSE»</span>
+                            <span class="adress">,ул. Металлургов 30</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="adresses__item">
+                    <h5 class="city">Ижевск</h5>
+                    <ul>
+                        <li>
+                            <span class="showroom">«Азбука Ремонта»</span>
+                            <span class="adress">,ул. Молодежная, 107б, оф. 348</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="adresses__item">
+                    <h5 class="city">Камышин</h5>
+                    <ul>
+                        <li>
+                            <span class="showroom"></span>
+                            <span class="adress">мкр. 5, 48Б</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="adresses__item">
+                    <h5 class="city">Москва</h5>
+                    <ul>
+                        <li>
+                            <span class="showroom">«Три Кита»</span>
+                            <span class="adress"></span>
+                        </li>
+                        <li>
+                            <span class="showroom">«Гранд»</span>
+                            <span class="adress">, Ленинградское ш., г. Химки, ул. Бутаково, 4</span>
+                        </li>
+                        <li>
+                            <span class="showroom">«Family Room»</span>
+                            <span class="adress">, 23-й киллометр Киевского шоссе, 8, 1</span>
+                        </li>
+                        <li>
+                            <span class="showroom">«Крокус Твой Дом»</span>
+                            <span class="adress">, ул. Международная, 6</span>
+                        </li>
+                        <li>
+                            <span class="showroom">«Империя»</span>
+                            <span class="adress">, Дмитриевское ш., 161б</span>
+                        </li>
+                        <li>
+                            <span class="showroom">«ROOMER»</span>
+                            <span class="adress">, Ленинградская слобода, 26</span>
+                        </li>
+                        <li>
+                            <span class="showroom">«Гранд ЮГ»</span>
+                            <span class="adress">, ул. Кировоградская, 15</span>
+                        </li>
+                        <li>
+                            <span class="showroom">«Армада»</span>
+                            <span class="adress">, ул. Кировоградская, дом 11, корп. 1</span>
+                        </li>
+                        <li>
+                            <span class="showroom">«Мебель Плаза Балашиха»</span>
+                            <span class="adress">, ш. Энтузиастов, 1а, «Стулстол» 3 этаж</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="adresses__item">
+                    <h5 class="city">Самара</h5>
+                    <ul>
+                        <li>
+                            <span class="showroom">«Мягкофф»</span>
+                            <span class="adress">,ул. Революционная, 70</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="adresses__item">
+                    <h5 class="city">Санкт-Петербург</h5>
+                    <ul>
+                        <li>
+                            <span class="showroom">«Кубатура»</span>
+                            <span class="adress">,ул. Фучика, д.9</span>
+                        </li>
+                        <li>
+                            <span class="showroom">«Круиз</span>
+                            <span class="adress">, Комедиантский пр., 4 к2, лит.А</span>
+                        </li>
+                        <li>
+                            <span class="showroom">«Гранд Каньон»</span>
+                            <span class="adress">,ул. Шастоковича, 8, к.9, лит.А</span>
+                        </li>
+                        <li>
+                            <span class="showroom">«MebelWood»</span>
+                            <span class="adress">, Дальневосточный пр., 14</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="adresses__item">
+                    <h5 class="city">Саратов</h5>
+                    <ul>
+                        <li>
+                            <span class="showroom">«Мебельсити»</span>
+                            <span class="adress">,ул. Симбирская, 154</span>
+                        </li>
+                        <li>
+                            <span class="showroom">«Мой Новая Мебель»</span>
+                            <span class="adress">,ул. Верхняя, 17</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="adresses__item">
+                    <h5 class="city">УФА</h5>
+                    <ul>
+                        <li>
+                            <span class="showroom">ВДНХ</span>
+                            <span class="adress">,ул. Менделеева, 158, Дом 2эт.</span>
+                        </li>
+                        <li>
+                            <span class="showroom">«Радуга Экспо»</span>
+                            <span class="adress">,ул. Индустриальное шоссе, д.44/3, 2эт.</span>
+                        </li>
+                        <li>
+                            <span class="showroom">«Аркаим Экспо»</span>
+                            <span class="adress">,ул. Менделеева, д.21, 1эт.</span>
+                        </li>
+                        <li>
+                            <span class="showroom">«Парус»</span>
+                            <span class="adress">,ул. Трамвайная, 2/3, -1эт.</span>
+                        </li>
+                        <li>
+                            <span class="showroom">«Чайка»</span>
+                            <span class="adress">,ул. Менделеева, 177, 3эт.</span>
+                        </li>
+                        <li>
+                            <span class="showroom"></span>
+                            <span class="adress">ул. Цюрупы, 130</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="adresses__item">
+                    <h5 class="city">Чебоксары</h5>
+                    <ul>
+                        <li>
+                            <span class="showroom">МТВ центр</span>
+                            <span class="adress">,пр. Ивана Яковлева, 4Б</span>
+                        </li>
+                        <li>
+                            <span class="showroom">«Мега Молл»</span>
+                            <span class="adress">,ул. Калинина, 105А</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="adresses__item">
+                    <h5 class="city">Энгельс</h5>
+                    <ul>
+                        <li>
+                            <span class="showroom"></span>
+                            <span class="adress">ул. Марины Расковой, 10</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>       
+    </div>
+    <div id="delivery" class="delivery">
+        <div class="delivery__img">
+            <img class="img__menu" src="images/menu.png" alt="">
+            <div class="img__wrapper">
+                <img class="img__orange" src="images/orange.png" alt="">
+                <img class="img__gradient" src="images/gradient.png" alt="">
+            </div>
+        </div>
+        <div class="delivery__body">
+            <h2 class="delivery__title">Бесплатная доставка и каталог</h2>
+            <p class="delivery__text">Заполните форму и получите каталог и бесплатную доставку до транспортной компании</p>
+            <form action="" class="delivery__form">
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel" placeholder="+7 (---)">
+                <input type="email" placeholder="Email">
+                <button>Отправить заявку</button>
+            </form>
+            <p class="delivery__footer">нажимая на кнопку, вы даете согласие на обработку персональных данных</p>
+        </div>
+    </div>
+    <div class="routes">
+        <div class="container">
+            <div class="routes__wrapper">
+                <a href="">
+                    <img src="images/left__img.png" alt="">
+                    <span>В интерьере <i class="arrow right"></i></span>
+                </a>
+                <a href="">
+                    <img src="images/right__img.png" alt="">
+                    <span>Хиты продаж <i class="arrow right"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="map">
+        <div class="map__info">
+            <h3 class="map__title">Контакты</h3>
+            <p class="map__adress map__text">428006, Россия, Чувашская республика,</br>г. Чебоксары, Складской проезд 10</p>
+            <p class="map__phone map__text">+7(996)643-43-30</p>
+            <p class="map__email map__text">info@verators.com</p>
+            <p class="map__worktime map__text">Пн. - Пт.: с 8:00 до 18:00</p>
+        </div>
+        <div id="map" style="width: 100%; height: 420px"></div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <img class="footer__logo" src="images/logo.svg" alt="">
+                <div class="footer__body">
+                    <div class="footer__item">
+                        <div class="footer__adress">
+                            <h5 class="footer__title">Контакты</h5>
+                            <p class="footer__text">428006, Россия, Чувашская республика, Чебовксары, Складской проезд, 10</p>  
+                        </div>
+                        <span class="footer__phone footer__title">
+                            +7 996 643 43 30
+                        </span>
+                        <div class="footer__worktime">
+                            <h5 class="footer__title">Время работы</h5>
+                            <p class="footer__text">ПН — ПТ | 8°° — 18°°</p>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <a class="help__link link__main" href="">Verators</a>
+                        <a class="help__link" href="">Каталог</a>
+                        <a class="help__link" href="about.html">О компании</a>
+                        <a class="help__link" href="">Контакты</a>
+                        <a class="help__link" href="">Адреса шоурумов</a>
+                        <a class="help__link" href="">В интерьере</a>
+                        <a class="help__link" href="">Доставка</a>
+                    </div>
+                    <div class="footer__item" >
+                        <a class="help__link link__main" href="">Помощь</a>
+                        <a class="help__link" href="">Процесс оплаты</a>
+                        <a class="help__link" href="">Возврат</a>
+                        <a class="help__link" href="">Контакты</a>
+                        <a class="help__link" href="">Дизайнерам и дилерам</a>
+                        <a class="help__link" href="">Реквизиты</a>
+                    </div>
+                </div>
+                <div class="footer__partners">
+                    <img src="images/mastercard__img.svg" alt="MasterCard">
+                    <img src="images/visa__img.svg" alt="VISA">
+                    <img src="images/mir__img.svg" alt="МИР">
+                    <img src="images/paykeeper__img.svg" alt="PayKeeper">
+                </div>
+                <div class="footer__rights">
+                    <a href="#">©2020 Verators</a>
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Пользовательское соглашение</a>
+                    <a href="#">Разработано Well Media</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="call hidden">
+        <div class="call__wrapper">
+            <button class="form__close"></button>
+            <form id="call__form" action="" class="call__form">
+                <input class="call__phone" type="tel" placeholder="+7 (---)">
+                <button class="call__button">Заказать звонок</button>
+            </form>
+            <p class="call__text">нажимая на кнопку, вы даете согласие на обработку персональных данных</p>
+        </div>
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

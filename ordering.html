@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERATORS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ada7606d-3795-4d4f-aac7-1508e476e1d4&lang=ru_RU" type="text/javascript"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="images/logo.svg" alt="">
+        <div class="header__body">
+            <div class="header__left">
+                <ul class="header__navigation">
+                    <li class="navigation__item child__menu">
+                        <a href="catalog.html">Каталог</a>
+                        <div class="subnav__wrap">
+                          <ul class="more__navigation">
+                            <li class="more__navigation__item"><a href="">Барные стулья</a></li>
+                            <li class="more__navigation__item"><a href="">Для кухни</a></li>
+                            <li class="more__navigation__item"><a href="">Для кафе, ресторанов</a></li>
+                            <li class="more__navigation__item"><a href="">Мягкие стулья</a></li>
+                            <li class="more__navigation__item"><a href="">Для офиса</a></li>
+                            <li class="more__navigation__item"><a href="">Распродажа</a></li>
+                            <li class="more__navigation__item"><a href="">Столы</a></li>
+                        </ul>
+                        </div> 
+                    </li>
+                    <li class="navigation__item"><a href="">Контакты</a></li>
+                    <li class="navigation__item"><a href="about.html">О компании</a></li>
+                    <li class="navigation__item"><a href="">Дилерам и дизайнерам</a></li>
+                    <li class="navigation__item"><a href="">Корзина</a></li>   
+                </ul>
+            </div>
+            <div class="header__right">
+                <div class="header__location">
+                    <img class="location__img" src="images/location.svg" alt="">
+                    <span class="location__adress">г. Чебоксары,</br>Складской пр. 10</span>
+                </div>
+                <span class="header__phone">+7 996 643-43-30</span>
+                <button class="header__button">
+                    <span class="button__text">
+                        Заказать звонок
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="ordering">
+        <div class="container">
+            <div class="ordering__wrap">
+                <div class="breadcrumbs">
+                    <span>Главная</span>
+                    /
+                    <span>корзина</span>
+                    /
+                    <span>оформление заказа</span>
+                </div>
+                <h2 class="ordering__title">Оформление заказа</h2>
+                <div class="ordering__form__wrap ordering__form__text">
+                    <form action="" method="get" class="odering__form">
+                        <div class="ordering__form__buttons">
+                            <button value="individual" class="button__individual ordering__form__active">Физическое лицо</button>
+                            <button value="entity" class="button__entity">Юридическое лицо</button>
+                        </div>
+                        <div class="ordering__form__main__items">
+                            <div class="individual">
+                                <div class="ordering__form__item required">
+                                    <input type="text" placeholder="Ваше имя" data-validate>
+                                    <span class="some-form__hint">Обязательно для заполнения</span>
+                                </div>
+                                <div class="ordering__form__item required">
+                                    <input type="text" placeholder="Фамилия" data-validate>
+                                    <span class="some-form__hint">Обязательно для заполнения</span>
+                                </div>
+                                <div class="ordering__form__item required">
+                                    <input type="text" placeholder="Отчество" data-validate>
+                                    <span class="some-form__hint">Обязательно для заполнения</span>
+                                </div>
+                                <div class="ordering__form__item required">
+                                    <input type="email" placeholder="Электронная почта" data-validate>
+                                    <span class="some-form__hint">Обязательно для заполнения</span>
+                                </div>
+                                <div class="ordering__form__item required">
+                                    <input type="tel" placeholder="+7(---)--- -- --" data-validate>
+                                    <span class="some-form__hint">Обязательно для заполнения</span>
+                                </div>
+                                <div class="ordering__form__item">
+                                    <input type="text" placeholder="Комментарий к заказу">
+                                </div>
+                            </div>  
+                        </div>
+                        <input id="ordering__delivery" name="ordering__delivery" class="custom__checkbox ordering__checkbox" type="checkbox">
+                        <label class="ordering__delivery" for="ordering__delivery">Использовать доставку</label>
+                        <div class="ordering__form__more__items">
+                            
+                        </div>
+                        <div class="ordering__form__pay__methods">
+                            <h5 class="ordering__form__pay__methods__title">Выбете платежную систему</h5>
+                            <div class="paymethods__body ordering__form__pay__methods__body">
+                                <div class="paymethods__item ordering__form__pay__methods__item">
+                                    <label>
+                                        <img src="images/paymethods__СБП.svg" alt="">
+                                        <input type="checkbox" value="1" name="СБП">
+                                    </label>
+                                </div>
+                                <div class="paymethods__item ordering__form__pay__methods__item">
+                                    <label>
+                                        <img src="images/paymethods__YooMoney.svg" alt="">
+                                        <input type="checkbox" value="2" name="YouMoney">
+                                    </label>
+                                </div>
+                                <div class="paymethods__item ordering__form__pay__methods__item">
+                                    <label>
+                                        <img src="images/paymethods__sberpay.svg" alt="">
+                                        <input type="checkbox" value="3" name="sberpay">
+                                    </label> 
+                                </div>
+                                <div class="paymethods__item ordering__form__pay__methods__item">
+                                    <label>
+                                        <img src="images/paymethods__mir.svg" alt="">
+                                        <input type="checkbox" value="4" name="mir">
+                                    </label>
+                                </div>
+                                <div class="paymethods__item ordering__form__pay__methods__item">
+                                    <label>
+                                        <img src="images/paymethods__paykeeper.svg" alt="">
+                                        <input type="checkbox" value="5" name="paykeeper">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" value="Отправить" id="ordering__form__button__send" class="ordering__form__button__send">Оформить заказ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="delivery" class="delivery">
+        <div class="delivery__img">
+            <img class="img__menu" src="images/menu.png" alt="">
+            <div class="img__wrapper">
+                <img class="img__orange" src="images/orange.png" alt="">
+                <img class="img__gradient" src="images/gradient.png" alt="">
+            </div>
+        </div>
+        <div class="delivery__body">
+            <h2 class="delivery__title">Бесплатная доставка и каталог</h2>
+            <p class="delivery__text">Заполните форму и получите каталог и бесплатную доставку до транспортной компании</p>
+            <form action="" class="delivery__form">
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel" placeholder="+7 (---)">
+                <input type="email" placeholder="Email">
+                <button>Отправить заявку</button>
+            </form>
+            <p class="delivery__footer">нажимая на кнопку, вы даете согласие на обработку персональных данных</p>
+        </div>
+    </div>
+<div class="map">
+        <div class="map__info">
+            <h3 class="map__title">Контакты</h3>
+            <p class="map__adress map__text">428006, Россия, Чувашская республика,</br>г. Чебоксары, Складской проезд 10</p>
+            <p class="map__phone map__text">+7(996)643-43-30</p>
+            <p class="map__email map__text">info@verators.com</p>
+            <p class="map__worktime map__text">Пн. - Пт.: с 8:00 до 18:00</p>
+        </div>
+        <div id="map" style="width: 100%; height: 420px"></div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <img class="footer__logo" src="images/logo.svg" alt="">
+                <div class="footer__body">
+                    <div class="footer__item">
+                        <div class="footer__adress">
+                            <h5 class="footer__title">Контакты</h5>
+                            <p class="footer__text">428006, Россия, Чувашская республика, Чебовксары, Складской проезд, 10</p>  
+                        </div>
+                        <span class="footer__phone footer__title">
+                            +7 996 643 43 30
+                        </span>
+                        <div class="footer__worktime">
+                            <h5 class="footer__title">Время работы</h5>
+                            <p class="footer__text">ПН — ПТ | 8°° — 18°°</p>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <a class="help__link link__main" href="">Verators</a>
+                        <a class="help__link" href="">Каталог</a>
+                        <a class="help__link" href="about.html">О компании</a>
+                        <a class="help__link" href="">Контакты</a>
+                        <a class="help__link" href="">Адреса шоурумов</a>
+                        <a class="help__link" href="">В интерьере</a>
+                        <a class="help__link" href="">Доставка</a>
+                    </div>
+                    <div class="footer__item" >
+                        <a class="help__link link__main" href="">Помощь</a>
+                        <a class="help__link" href="">Процесс оплаты</a>
+                        <a class="help__link" href="">Возврат</a>
+                        <a class="help__link" href="">Контакты</a>
+                        <a class="help__link" href="">Дизайнерам и дилерам</a>
+                        <a class="help__link" href="">Реквизиты</a>
+                    </div>
+                </div>
+                <div class="footer__partners">
+                    <img src="images/mastercard__img.svg" alt="MasterCard">
+                    <img src="images/visa__img.svg" alt="VISA">
+                    <img src="images/mir__img.svg" alt="МИР">
+                    <img src="images/paykeeper__img.svg" alt="PayKeeper">
+                </div>
+                <div class="footer__rights">
+                    <a href="#">©2020 Verators</a>
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Пользовательское соглашение</a>
+                    <a href="#">Разработано Well Media</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="call hidden">
+        <div class="call__wrapper">
+            <button class="form__close"></button>
+            <form id="call__form" action="" class="call__form">
+                <input class="call__phone" type="tel" placeholder="+7 (---)">
+                <button class="call__button">Заказать звонок</button>
+            </form>
+            <p class="call__text">нажимая на кнопку, вы даете согласие на обработку персональных данных</p>
+        </div>
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

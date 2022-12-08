@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERATORS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=ada7606d-3795-4d4f-aac7-1508e476e1d4&lang=ru_RU" type="text/javascript"></script>   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </script>
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="images/logo.svg" alt="">
+        <div class="header__body">
+            <div class="header__left">
+                <ul class="header__navigation">
+                    <li class="navigation__item child__menu">
+                        <a href="catalog.html">Каталог</a>
+                        <div class="subnav__wrap">
+                          <ul class="more__navigation">
+                            <li class="more__navigation__item"><a href="">Барные стулья</a></li>
+                            <li class="more__navigation__item"><a href="">Для кухни</a></li>
+                            <li class="more__navigation__item"><a href="">Для кафе, ресторанов</a></li>
+                            <li class="more__navigation__item"><a href="">Мягкие стулья</a></li>
+                            <li class="more__navigation__item"><a href="">Для офиса</a></li>
+                            <li class="more__navigation__item"><a href="">Распродажа</a></li>
+                            <li class="more__navigation__item"><a href="">Столы</a></li>
+                        </ul>
+                        </div> 
+                    </li>
+                    <li class="navigation__item"><a href="">Контакты</a></li>
+                    <li class="navigation__item"><a href="about.html">О компании</a></li>
+                    <li class="navigation__item"><a href="">Дилерам и дизайнерам</a></li>
+                    <li class="navigation__item"><a href="">Корзина</a></li>   
+                </ul>
+            </div>
+            <div class="header__right">
+                <div class="header__location">
+                    <img class="location__img" src="images/location.svg" alt="">
+                    <span class="location__adress">г. Чебоксары,</br>Складской пр. 10</span>
+                </div>
+                <span class="header__phone">+7 996 643-43-30</span>
+                <button class="header__button">
+                    <span class="button__text">
+                        Заказать звонок
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="feautures catalog__feautures">
+        <div class="container">
+            <div class="feautures__header catalog__feautures__header">
+                <div class="catalog__feautures__header_left">
+                    <h1 class="header__title catalog__header__title">Бесплатная доставка</h1>
+                    <ul class="feautures__row">
+                        <li class="catalog__row__item row__item">При оплате в шоу-руме</li>
+                        <li class="catalog__row__item row__item">Доставим до терминала выдачи заказов в вашем городе</li>
+                        <li class="catalog__row__item row__item"><a class="row__detailed" href="#" tabindex="0">Подробнее &gt;</a></li>
+                    </ul>
+                </div>
+                <div class="catalog__feautures__header_right">
+                    <img src="images/table__catalog.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="feautures__background catalog__feautures__background"></div>
+    </div>
+    <div class="catalog catalog__page">
+        <div class="container">
+            <div class="catalog__wrap">
+                <div class="catalog__left">
+                    <form class="catalog__page__filters" action="">
+                        <div class="filter">
+                            <h4 class="filter__name">Цена</h4>
+                            <div class="filter__body">
+                                <div class="filter__prices">
+                                    <div class="min__price filter__price">
+                                        <span>от</span>
+                                        <input id="min__price" type="text">
+                                    </div>
+                                    <div class="max__price filter__price">
+                                        <span>до</span>
+                                        <input id="max__price" type="text">
+                                    </div>
+                                </div>
+                                <p>Стили ползунка в самом коцне файла стилей</p>
+                                <div class="filter__prices__checkboxes">
+                                    <div class="filter__prices__checkbox">
+                                        <input id="range1" class="custom__checkbox" type="checkbox" value="1">
+                                        <label for="range1">до 30 000 ₽</label>
+                                    </div>
+                                    <div class="filter__prices__checkbox">
+                                        <input id="range2" class="custom__checkbox" type="checkbox" value="2">
+                                        <label for="range2">30 000 ₽ — 60 000 ₽</label>
+                                    </div>
+                                    <div class="filter__prices__checkbox">
+                                        <input id="range3" class="custom__checkbox" type="checkbox" value="3">
+                                        <label for="range3">60 000 ₽ — 100 000 ₽</label>
+                                    </div>
+                                    <div class="filter__prices__checkbox">
+                                        <input id="range4" class="custom__checkbox" type="checkbox" value="4">
+                                        <label for="range4">более 100 000 ₽</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter">
+                            <h4 class="filter__name">Цвет</h4>
+                            <div class="filter__body">
+                                <div class="filter__colors__checkboxes">
+                                    <div class="filter__colors__checkbox">
+                                        <input id="color1" class="custom__checkbox" type="checkbox" value="1">
+                                        <label for="color1">Бежевый</label>
+                                    </div>
+                                    <div class="filter__colors__checkbox">
+                                        <input id="color2" class="custom__checkbox" type="checkbox" value="2">
+                                        <label for="color2">Белый</label>
+                                    </div>
+                                    <div class="filter__colors__checkbox">
+                                        <input id="color3" class="custom__checkbox" type="checkbox" value="3">
+                                        <label for="color3">Бирюзовый</label>
+                                    </div>
+                                    <div class="filter__colors__checkbox">
+                                        <input id="color4" class="custom__checkbox" type="checkbox" value="4">
+                                        <label for="color4">Жёлтый</label>
+                                    </div>
+                                    <div class="filter__colors__checkbox">
+                                        <input id="color5" class="custom__checkbox" type="checkbox" value="5">
+                                        <label for="color5">Зеленый</label>
+                                    </div>
+                                    <div class="filter__colors__checkbox">
+                                        <input id="color6" class="custom__checkbox" type="checkbox" value="6">
+                                        <label for="color6">Коричневый</label>
+                                    </div>
+                                    <div class="filter__colors__checkbox">
+                                        <input id="color7" class="custom__checkbox" type="checkbox" value="7">
+                                        <label for="color7">Красный</label>
+                                    </div>
+                                    <div class="filter__colors__checkbox">
+                                        <input id="color8" class="custom__checkbox" type="checkbox" value="8">
+                                        <label for="color8">Лавандовый</label>
+                                    </div>
+                                    <div class="filter__colors__checkbox">
+                                        <input id="color9" class="custom__checkbox" type="checkbox" value="9">
+                                        <label for="color9">Лиловый</label>
+                                    </div>
+                                    <div class="filter__colors__checkbox">
+                                        <input id="color10" class="custom__checkbox" type="checkbox" value="10">
+                                        <label for="color10">Оранжевый</label>
+                                    </div>
+                                    <div class="filter__colors__checkbox">
+                                        <input id="color11" class="custom__checkbox" type="checkbox" value="11">
+                                        <label for="color11">Розовый</label>
+                                    </div>
+                                    <div class="filter__colors__checkbox">
+                                        <input id="color12" class="custom__checkbox" type="checkbox" value="12">
+                                        <label for="color12">Серый</label>
+                                    </div>
+                                    <div class="filter__colors__checkbox">
+                                        <input id="color13" class="custom__checkbox" type="checkbox" value="13">
+                                        <label for="color13">Синий</label>
+                                    </div>
+                                    <div class="filter__colors__checkbox">
+                                        <input id="color14" class="custom__checkbox" type="checkbox" value="14">
+                                        <label for="color14">Фиолетовый</label>
+                                    </div>
+                                    <div class="filter__colors__checkbox">
+                                        <input id="color15" class="custom__checkbox" type="checkbox" value="15">
+                                        <label for="color15">Фуксия</label>
+                                    </div>
+                                    <div class="filter__colors__checkbox">
+                                        <input id="color16" class="custom__checkbox" type="checkbox" value="16">
+                                        <label for="color16">Чёрный</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter">
+                            <h4 class="filter__name">Габаритная ширина</h4>
+                            <div class="filter__body">123</div>
+                        </div>
+                        <div class="filter">
+                            <h4 class="filter__name">Высота стола</h4>
+                            <div class="filter__body">123</div>
+                        </div>
+                        <div class="filter">
+                            <h4 class="filter__name">Высота стола</h4>
+                            <div class="filter__body">123</div>
+                        </div>
+                        <div class="filter">
+                            <h4 class="filter__name">Форма столешницы</h4>
+                            <div class="filter__body">123</div>
+                        </div>
+                    </form>
+                </div>
+                <div class="catalog__right">
+                    <h2 class="catalog__title catalog__body__title">Обеденные столы из керамогранита</h2>
+                    <div class="breadcrumbs catalog__page__breadcrumbs">
+                        <span>Главная</span>
+                        /
+                        <span>Каталог</span>
+                        /
+                        <span>столы</span>
+                    </div>
+                    <div class="catalog__categories catalog__page__categories">
+                        <button class="catalog__button catalog__page__button"><div class="img__wrap"><img src="images/categories__img5.png" alt=""></div>Барные</button>
+                        <button class="catalog__button catalog__page__button"><div class="img__wrap"><img src="images/categories__img4.png" alt=""></div>Для кухни</button>
+                        <button class="catalog__button catalog__page__button catalog__button_active"><div class="img__wrap"><img src="images/categories__img6.png" alt=""></div>Распродажа</button>
+                        <button class="catalog__button catalog__page__button"><div class="img__wrap"><img src="images/categories__img4.png" alt=""></div>Для кафе и ресторанов</button>
+                        <button class="catalog__button catalog__page__button"><div class="img__wrap"><img src="images/categories__img1.png" alt=""></div>Для салонов красоты</button>
+                        <button class="catalog__button catalog__page__button"><div class="img__wrap"><img src="images/categories__img2.png" alt=""></div>Мягкие стулья</button>
+                        <button class="catalog__button catalog__page__button"><div class="img__wrap"><img src="images/categories__img4.png" alt=""></div>Для офиса</button>
+                        <button class="catalog__button catalog__page__button"><div class="img__wrap"><img src="images/categories__img3.png" alt=""></div>Столы</button>
+                    </div>
+                    <div class="catalog__page__body">
+                        <div class="catalog__item catalog__page__item">
+                            <div class="images">
+                              <img src="images/sale__img1.png">
+                              <img src="images/sale__img2.png">
+                              <img src="images/sale__img3.png">
+                              <img src="images/sale__img4.png">
+                            </div>
+                              <h5 class="item__title">ZENA</h5>
+                              <p class="item__text">мягкий стул, барный стул, розовый, модерн</p>
+                              <div class="item__footer">
+                                  <div class="footer__wrap">
+                                    <p class="item__price">30 650 ₽</p>
+                                    <a class="row__detailed" href="#">Подробнее ></a>
+                                  </div>
+                                  <button class="item__button">В корзину</button>
+                              </div>
+                        </div>
+                        <div class="catalog__item catalog__page__item">
+                            <img class="item__img" src="images/catalog__img1.png" alt="">
+                            <h5 class="item__title">CROSS</h5>
+                            <p class="item__text">мягкий стул, для офиса, серый, норд</p>
+                            <div class="item__footer">
+                                <div class="footer__wrap">
+                                    <p class="item__price">30 650 ₽</p>
+                                    <a class="row__detailed" href="#">Подробнее ></a>
+                                </div>
+                                <button class="item__button">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="catalog__item catalog__page__item">
+                            <img class="item__img" src="images/catalog__img2.png" alt="">
+                            <h5 class="item__title">IONA</h5>
+                            <p class="item__text">мягкий стул, барный стул, розовый, модерн</p>
+                            <div class="item__footer">
+                                <div class="footer__wrap">
+                                    <p class="item__price">30 650 ₽</p>
+                                    <a class="row__detailed" href="#">Подробнее ></a>
+                                </div>
+                                <button class="item__button">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="catalog__item catalog__page__item">
+                            <img class="item__img" src="images/catalog__img3.png" alt="">
+                            <h5 class="item__title">VITYA</h5>
+                            <p class="item__text">мягкий стул, для кухни, бежевый, скандинавия</p>
+                            <div class="item__footer">
+                                <div class="footer__wrap">
+                                    <p class="item__price">30 650 ₽</p>
+                                    <a class="row__detailed" href="#">Подробнее ></a>
+                                </div>
+                                <button class="item__button">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="catalog__item catalog__page__item">
+                            <img class="item__img" src="images/catalog__img4.png" alt="">
+                            <h5 class="item__title">TERRA DENIS 360°</h5>
+                            <p class="item__text">для офиса, для бара, черный, хайтек</p>
+                            <div class="item__footer">
+                                <div class="footer__wrap">
+                                    <p class="item__price">30 650 ₽</p>
+                                    <a class="row__detailed" href="#">Подробнее ></a>
+                                </div>
+                                <button class="item__button">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="catalog__item catalog__page__item">
+                            <img class="item__img" src="images/catalog__img1.png" alt="">
+                            <h5 class="item__title">CROSS</h5>
+                            <p class="item__text">мягкий стул, для офиса, серый, норд</p>
+                            <div class="item__footer">
+                                <div class="footer__wrap">
+                                    <p class="item__price">30 650 ₽</p>
+                                    <a class="row__detailed" href="#">Подробнее ></a>
+                                </div>
+                                <button class="item__button">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="catalog__item catalog__page__item">
+                            <img class="item__img" src="images/catalog__img2.png" alt="">
+                            <h5 class="item__title">IONA</h5>
+                            <p class="item__text">мягкий стул, барный стул, розовый, модерн</p>
+                            <div class="item__footer">
+                                <div class="footer__wrap">
+                                    <p class="item__price">30 650 ₽</p>
+                                    <a class="row__detailed" href="#">Подробнее ></a>
+                                </div>
+                                <button class="item__button">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="catalog__item catalog__page__item">
+                            <img class="item__img" src="images/catalog__img3.png" alt="">
+                            <h5 class="item__title">VITYA</h5>
+                            <p class="item__text">мягкий стул, для кухни, бежевый, скандинавия</p>
+                            <div class="item__footer">
+                                <div class="footer__wrap">
+                                    <p class="item__price">30 650 ₽</p>
+                                    <a class="row__detailed" href="#">Подробнее ></a>
+                                </div>
+                                <button class="item__button">В корзину</button>
+                            </div>
+                        </div>
+                        <div class="catalog__item catalog__page__item">
+                            <img class="item__img" src="images/catalog__img4.png" alt="">
+                            <h5 class="item__title">TERRA DENIS 360°</h5>
+                            <p class="item__text">для офиса, для бара, черный, хайтек</p>
+                            <div class="item__footer">
+                                <div class="footer__wrap">
+                                    <p class="item__price">30 650 ₽</p>
+                                    <a class="row__detailed" href="#">Подробнее ></a>
+                                </div>
+                                <button class="item__button">В корзину</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="catalog__pagination">
+                        <div class="pagination__row">
+                            <span class="pagination__item">1</span>
+                            <span class="pagination__item">2</span>
+                            <span class="pagination__item pagination__item__current">3</span>
+                            <span class="pagination__item">4</span>
+                            <span class="pagination__item">5</span>
+                            <span class="pagination__item">6</span>
+                        </div>
+                        <div class="pages__count">
+                            из
+                            <span class="pages__counter">
+                                28
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div id="delivery" class="delivery">
+        <div class="delivery__img">
+            <img class="img__menu" src="images/menu.png" alt="">
+            <div class="img__wrapper">
+                <img class="img__orange" src="images/orange.png" alt="">
+                <img class="img__gradient" src="images/gradient.png" alt="">
+            </div>
+        </div>
+        <div class="delivery__body">
+            <h2 class="delivery__title">Бесплатная доставка и каталог</h2>
+            <p class="delivery__text">Заполните форму и получите каталог и бесплатную доставку до транспортной компании</p>
+            <form action="" class="delivery__form">
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel" placeholder="+7 (---)">
+                <input type="email" placeholder="Email">
+                <button>Отправить заявку</button>
+            </form>
+            <p class="delivery__footer">нажимая на кнопку, вы даете согласие на обработку персональных данных</p>
+        </div>
+    </div>
+    <div class="map">
+        <div class="map__info">
+            <h3 class="map__title">Контакты</h3>
+            <p class="map__adress map__text">428006, Россия, Чувашская республика,</br>г. Чебоксары, Складской проезд 10</p>
+            <p class="map__phone map__text">+7(996)643-43-30</p>
+            <p class="map__email map__text">info@verators.com</p>
+            <p class="map__worktime map__text">Пн. - Пт.: с 8:00 до 18:00</p>
+        </div>
+        <div id="map" style="width: 100%; height: 420px"></div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <img class="footer__logo" src="images/logo.svg" alt="">
+                <div class="footer__body">
+                    <div class="footer__item">
+                        <div class="footer__adress">
+                            <h5 class="footer__title">Контакты</h5>
+                            <p class="footer__text">428006, Россия, Чувашская республика, Чебовксары, Складской проезд, 10</p>  
+                        </div>
+                        <span class="footer__phone footer__title">
+                            +7 996 643 43 30
+                        </span>
+                        <div class="footer__worktime">
+                            <h5 class="footer__title">Время работы</h5>
+                            <p class="footer__text">ПН — ПТ | 8°° — 18°°</p>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <a class="help__link link__main" href="">Verators</a>
+                        <a class="help__link" href="">Каталог</a>
+                        <a class="help__link" href="about.html">О компании</a>
+                        <a class="help__link" href="">Контакты</a>
+                        <a class="help__link" href="">Адреса шоурумов</a>
+                        <a class="help__link" href="">В интерьере</a>
+                        <a class="help__link" href="">Доставка</a>
+                    </div>
+                    <div class="footer__item" >
+                        <a class="help__link link__main" href="">Помощь</a>
+                        <a class="help__link" href="">Процесс оплаты</a>
+                        <a class="help__link" href="">Возврат</a>
+                        <a class="help__link" href="">Контакты</a>
+                        <a class="help__link" href="">Дизайнерам и дилерам</a>
+                        <a class="help__link" href="">Реквизиты</a>
+                    </div>
+                </div>
+                <div class="footer__partners">
+                    <img src="images/mastercard__img.svg" alt="MasterCard">
+                    <img src="images/visa__img.svg" alt="VISA">
+                    <img src="images/mir__img.svg" alt="МИР">
+                    <img src="images/paykeeper__img.svg" alt="PayKeeper">
+                </div>
+                <div class="footer__rights">
+                    <a href="#">©2020 Verators</a>
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Пользовательское соглашение</a>
+                    <a href="#">Разработано Well Media</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="call hidden">
+        <div class="call__wrapper">
+            <button class="form__close"></button>
+            <form id="call__form" action="" class="call__form">
+                <input class="call__phone" type="tel" placeholder="+7 (---)">
+                <button class="call__button">Заказать звонок</button>
+            </form>
+            <p class="call__text">нажимая на кнопку, вы даете согласие на обработку персональных данных</p>
+        </div>
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

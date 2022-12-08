@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERATORS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ada7606d-3795-4d4f-aac7-1508e476e1d4&lang=ru_RU" type="text/javascript"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="images/logo.svg" alt="">
+        <div class="header__body">
+            <div class="header__left">
+                <ul class="header__navigation">
+                    <li class="navigation__item child__menu">
+                        <a href="catalog.html">Каталог</a>
+                        <div class="subnav__wrap">
+                          <ul class="more__navigation">
+                            <li class="more__navigation__item"><a href="">Барные стулья</a></li>
+                            <li class="more__navigation__item"><a href="">Для кухни</a></li>
+                            <li class="more__navigation__item"><a href="">Для кафе, ресторанов</a></li>
+                            <li class="more__navigation__item"><a href="">Мягкие стулья</a></li>
+                            <li class="more__navigation__item"><a href="">Для офиса</a></li>
+                            <li class="more__navigation__item"><a href="">Распродажа</a></li>
+                            <li class="more__navigation__item"><a href="">Столы</a></li>
+                        </ul>
+                        </div> 
+                    </li>
+                    <li class="navigation__item"><a href="">Контакты</a></li>
+                    <li class="navigation__item"><a href="about.html">О компании</a></li>
+                    <li class="navigation__item"><a href="">Дилерам и дизайнерам</a></li>
+                    <li class="navigation__item"><a href="">Корзина</a></li>   
+                </ul>
+            </div>
+            <div class="header__right">
+                <div class="header__location">
+                    <img class="location__img" src="images/location.svg" alt="">
+                    <span class="location__adress">г. Чебоксары,</br>Складской пр. 10</span>
+                </div>
+                <span class="header__phone">+7 996 643-43-30</span>
+                <button class="header__button">
+                    <span class="button__text">
+                        Заказать звонок
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+ 
+    <div class="basket">
+        <div class="container">
+            <div class="basket__wrap">
+                <div class="breadcrumbs">
+                    <span>Главная</span>
+                    /
+                    <span>Корзина</span>
+                </div>
+                <h2 class="basket__title">Корзина</h2>
+                <a href="" class="button__back">&lt; <span>Назад к покупкам</span></a>
+                <div class="basket__body">
+                    <div class="basket__left">
+                        <div class="basket__item">
+                            <div class="basket__img__wrap">
+                                <img src="images/sale__img3.png" alt="">
+                            </div>
+                            <div class="basket__item__body basket__item__column">
+                                <h3 class="basket__item__body__title">ALINA</h3>
+                                <p class="basket__item__body__description">мягкий стул, барный стул, модерн, 75 см</p>
+                                <div class="basket__item__body__characteristics">
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ножки</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>черный</span>
+                                            <span>металл</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ткань</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>Bravo</span>
+                                            <span>велюр</span>
+                                            <span>синий</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__item__options basket__item__column">
+                                <button class="basket__item__delete">Удалить</button>
+                                <div class="basket__item__counter">
+                                    <span class="basket__item__counter_minus">-</span>
+                                    <span class="basket__item__count">4</span>
+                                    <span class="basket__item__counter_plus">+</span>
+                                </div>
+                                <span class="basket__item__sum">172 600 ₽</span>
+                                <div class="basket__item__price_for_one">
+                                    <span class="basket__item__price">43 150 ₽</span>
+                                    <span> за шт.</span>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="basket__item">
+                            <div class="basket__img__wrap">
+                                <img src="images/sale__img1.png" alt="">
+                            </div>
+                            <div class="basket__item__body basket__item__column">
+                                <h3 class="basket__item__body__title">ZENA</h3>
+                                <p class="basket__item__body__description">мягкий стул, барный стул, модерн, 75 см</p>
+                                <div class="basket__item__body__characteristics">
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ножки</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>черный</span>
+                                            <span>металл</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ткань</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>Bravo</span>
+                                            <span>велюр</span>
+                                            <span>розовый</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__item__options basket__item__column">
+                                <button class="basket__item__delete">Удалить</button>
+                                <div class="basket__item__counter">
+                                    <span class="basket__item__counter_minus">-</span>
+                                    <span class="basket__item__count">2</span>
+                                    <span class="basket__item__counter_plus">+</span>
+                                </div>
+                                <span class="basket__item__sum">54 200 ₽</span>
+                                <div class="basket__item__price_for_one">
+                                    <span class="basket__item__price">27 100 ₽</span>
+                                    <span> за шт.</span>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="basket__item">
+                            <div class="basket__img__wrap">
+                                <img src="images/sale__img3.png" alt="">
+                            </div>
+                            <div class="basket__item__body basket__item__column">
+                                <h3 class="basket__item__body__title">ALINA</h3>
+                                <p class="basket__item__body__description">мягкий стул, барный стул, модерн, 75 см</p>
+                                <div class="basket__item__body__characteristics">
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ножки</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>черный</span>
+                                            <span>металл</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ткань</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>Bravo</span>
+                                            <span>велюр</span>
+                                            <span>синий</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__item__options basket__item__column">
+                                <button class="basket__item__delete">Удалить</button>
+                                <div class="basket__item__counter">
+                                    <span class="basket__item__counter_minus">-</span>
+                                    <span class="basket__item__count">4</span>
+                                    <span class="basket__item__counter_plus">+</span>
+                                </div>
+                                <span class="basket__item__sum">172 600 ₽</span>
+                                <div class="basket__item__price_for_one">
+                                    <span class="basket__item__price">43 150 ₽</span>
+                                    <span> за шт.</span>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="basket__item">
+                            <div class="basket__img__wrap">
+                                <img src="images/sale__img1.png" alt="">
+                            </div>
+                            <div class="basket__item__body basket__item__column">
+                                <h3 class="basket__item__body__title">ZENA</h3>
+                                <p class="basket__item__body__description">мягкий стул, барный стул, модерн, 75 см</p>
+                                <div class="basket__item__body__characteristics">
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ножки</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>черный</span>
+                                            <span>металл</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ткань</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>Bravo</span>
+                                            <span>велюр</span>
+                                            <span>розовый</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__item__options basket__item__column">
+                                <button class="basket__item__delete">Удалить</button>
+                                <div class="basket__item__counter">
+                                    <span class="basket__item__counter_minus">-</span>
+                                    <span class="basket__item__count">2</span>
+                                    <span class="basket__item__counter_plus">+</span>
+                                </div>
+                                <span class="basket__item__sum">54 200 ₽</span>
+                                <div class="basket__item__price_for_one">
+                                    <span class="basket__item__price">27 100 ₽</span>
+                                    <span> за шт.</span>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="basket__item">
+                            <div class="basket__img__wrap">
+                                <img src="images/sale__img3.png" alt="">
+                            </div>
+                            <div class="basket__item__body basket__item__column">
+                                <h3 class="basket__item__body__title">ALINA</h3>
+                                <p class="basket__item__body__description">мягкий стул, барный стул, модерн, 75 см</p>
+                                <div class="basket__item__body__characteristics">
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ножки</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>черный</span>
+                                            <span>металл</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ткань</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>Bravo</span>
+                                            <span>велюр</span>
+                                            <span>синий</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__item__options basket__item__column">
+                                <button class="basket__item__delete">Удалить</button>
+                                <div class="basket__item__counter">
+                                    <span class="basket__item__counter_minus">-</span>
+                                    <span class="basket__item__count">4</span>
+                                    <span class="basket__item__counter_plus">+</span>
+                                </div>
+                                <span class="basket__item__sum">172 600 ₽</span>
+                                <div class="basket__item__price_for_one">
+                                    <span class="basket__item__price">43 150 ₽</span>
+                                    <span> за шт.</span>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="basket__item">
+                            <div class="basket__img__wrap">
+                                <img src="images/sale__img1.png" alt="">
+                            </div>
+                            <div class="basket__item__body basket__item__column">
+                                <h3 class="basket__item__body__title">ZENA</h3>
+                                <p class="basket__item__body__description">мягкий стул, барный стул, модерн, 75 см</p>
+                                <div class="basket__item__body__characteristics">
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ножки</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>черный</span>
+                                            <span>металл</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ткань</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>Bravo</span>
+                                            <span>велюр</span>
+                                            <span>розовый</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__item__options basket__item__column">
+                                <button class="basket__item__delete">Удалить</button>
+                                <div class="basket__item__counter">
+                                    <span class="basket__item__counter_minus">-</span>
+                                    <span class="basket__item__count">2</span>
+                                    <span class="basket__item__counter_plus">+</span>
+                                </div>
+                                <span class="basket__item__sum">54 200 ₽</span>
+                                <div class="basket__item__price_for_one">
+                                    <span class="basket__item__price">27 100 ₽</span>
+                                    <span> за шт.</span>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="basket__item">
+                            <div class="basket__img__wrap">
+                                <img src="images/sale__img3.png" alt="">
+                            </div>
+                            <div class="basket__item__body basket__item__column">
+                                <h3 class="basket__item__body__title">ALINA</h3>
+                                <p class="basket__item__body__description">мягкий стул, барный стул, модерн, 75 см</p>
+                                <div class="basket__item__body__characteristics">
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ножки</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>черный</span>
+                                            <span>металл</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ткань</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>Bravo</span>
+                                            <span>велюр</span>
+                                            <span>синий</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__item__options basket__item__column">
+                                <button class="basket__item__delete">Удалить</button>
+                                <div class="basket__item__counter">
+                                    <span class="basket__item__counter_minus">-</span>
+                                    <span class="basket__item__count">4</span>
+                                    <span class="basket__item__counter_plus">+</span>
+                                </div>
+                                <span class="basket__item__sum">172 600 ₽</span>
+                                <div class="basket__item__price_for_one">
+                                    <span class="basket__item__price">43 150 ₽</span>
+                                    <span> за шт.</span>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="basket__item">
+                            <div class="basket__img__wrap">
+                                <img src="images/sale__img1.png" alt="">
+                            </div>
+                            <div class="basket__item__body basket__item__column">
+                                <h3 class="basket__item__body__title">ZENA</h3>
+                                <p class="basket__item__body__description">мягкий стул, барный стул, модерн, 75 см</p>
+                                <div class="basket__item__body__characteristics">
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ножки</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>черный</span>
+                                            <span>металл</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ткань</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>Bravo</span>
+                                            <span>велюр</span>
+                                            <span>розовый</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__item__options basket__item__column">
+                                <button class="basket__item__delete">Удалить</button>
+                                <div class="basket__item__counter">
+                                    <span class="basket__item__counter_minus">-</span>
+                                    <span class="basket__item__count">2</span>
+                                    <span class="basket__item__counter_plus">+</span>
+                                </div>
+                                <span class="basket__item__sum">54 200 ₽</span>
+                                <div class="basket__item__price_for_one">
+                                    <span class="basket__item__price">27 100 ₽</span>
+                                    <span> за шт.</span>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="basket__item">
+                            <div class="basket__img__wrap">
+                                <img src="images/sale__img3.png" alt="">
+                            </div>
+                            <div class="basket__item__body basket__item__column">
+                                <h3 class="basket__item__body__title">ALINA</h3>
+                                <p class="basket__item__body__description">мягкий стул, барный стул, модерн, 75 см</p>
+                                <div class="basket__item__body__characteristics">
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ножки</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>черный</span>
+                                            <span>металл</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ткань</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>Bravo</span>
+                                            <span>велюр</span>
+                                            <span>синий</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__item__options basket__item__column">
+                                <button class="basket__item__delete">Удалить</button>
+                                <div class="basket__item__counter">
+                                    <span class="basket__item__counter_minus">-</span>
+                                    <span class="basket__item__count">4</span>
+                                    <span class="basket__item__counter_plus">+</span>
+                                </div>
+                                <span class="basket__item__sum">172 600 ₽</span>
+                                <div class="basket__item__price_for_one">
+                                    <span class="basket__item__price">43 150 ₽</span>
+                                    <span> за шт.</span>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="basket__item">
+                            <div class="basket__img__wrap">
+                                <img src="images/sale__img1.png" alt="">
+                            </div>
+                            <div class="basket__item__body basket__item__column">
+                                <h3 class="basket__item__body__title">ZENA</h3>
+                                <p class="basket__item__body__description">мягкий стул, барный стул, модерн, 75 см</p>
+                                <div class="basket__item__body__characteristics">
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ножки</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>черный</span>
+                                            <span>металл</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ткань</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>Bravo</span>
+                                            <span>велюр</span>
+                                            <span>розовый</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__item__options basket__item__column">
+                                <button class="basket__item__delete">Удалить</button>
+                                <div class="basket__item__counter">
+                                    <span class="basket__item__counter_minus">-</span>
+                                    <span class="basket__item__count">2</span>
+                                    <span class="basket__item__counter_plus">+</span>
+                                </div>
+                                <span class="basket__item__sum">54 200 ₽</span>
+                                <div class="basket__item__price_for_one">
+                                    <span class="basket__item__price">27 100 ₽</span>
+                                    <span> за шт.</span>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="basket__item">
+                            <div class="basket__img__wrap">
+                                <img src="images/sale__img3.png" alt="">
+                            </div>
+                            <div class="basket__item__body basket__item__column">
+                                <h3 class="basket__item__body__title">ALINA</h3>
+                                <p class="basket__item__body__description">мягкий стул, барный стул, модерн, 75 см</p>
+                                <div class="basket__item__body__characteristics">
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ножки</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>черный</span>
+                                            <span>металл</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ткань</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>Bravo</span>
+                                            <span>велюр</span>
+                                            <span>синий</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__item__options basket__item__column">
+                                <button class="basket__item__delete">Удалить</button>
+                                <div class="basket__item__counter">
+                                    <span class="basket__item__counter_minus">-</span>
+                                    <span class="basket__item__count">4</span>
+                                    <span class="basket__item__counter_plus">+</span>
+                                </div>
+                                <span class="basket__item__sum">172 600 ₽</span>
+                                <div class="basket__item__price_for_one">
+                                    <span class="basket__item__price">43 150 ₽</span>
+                                    <span> за шт.</span>
+                                </div>                                
+                            </div>
+                        </div>
+                        <div class="basket__item">
+                            <div class="basket__img__wrap">
+                                <img src="images/sale__img1.png" alt="">
+                            </div>
+                            <div class="basket__item__body basket__item__column">
+                                <h3 class="basket__item__body__title">ZENA</h3>
+                                <p class="basket__item__body__description">мягкий стул, барный стул, модерн, 75 см</p>
+                                <div class="basket__item__body__characteristics">
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ножки</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>черный</span>
+                                            <span>металл</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                    <div class="basket__item__body__characteristics__item">
+                                        <span class="basket__item__body__characteristic__name">Ткань</span>
+                                        <div class="basket__item__body__characreristic">
+                                            <span>Bravo</span>
+                                            <span>велюр</span>
+                                            <span>розовый</span>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket__item__options basket__item__column">
+                                <button class="basket__item__delete">Удалить</button>
+                                <div class="basket__item__counter">
+                                    <span class="basket__item__counter_minus">-</span>
+                                    <span class="basket__item__count">2</span>
+                                    <span class="basket__item__counter_plus">+</span>
+                                </div>
+                                <span class="basket__item__sum">54 200 ₽</span>
+                                <div class="basket__item__price_for_one">
+                                    <span class="basket__item__price">27 100 ₽</span>
+                                    <span> за шт.</span>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basket__right">
+                        <div class="basket__total">
+                            <span>Товары</span>
+                            <span>(6)</span>
+                            <div class="dash"></div>
+                            <span class="basket__total__price">226 800 ₽</span>
+                        </div>
+                        <p class="basket__total__description">*В стоимость входит доставка до пункта выдачи (магазина)</p>
+                        <div class="basket__promo">
+                            <input type="text" placeholder="Введите промокод">
+                            <button>Применить</button>
+                        </div>
+                        <div class="basket__buttons">
+                            <button class="product__button product__button1">Перейти к оформлению</button>
+                            <button class="product__button product__button2">Купить в 1 клик</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product__similar">
+        <div class="container">
+            <h2 class="product__similar__title">
+                Вам понравится
+            </h2>
+            <div class="product__similar__wrap">
+                <div class="product__similar__item">
+                    <div class="images">
+                        <img src="images/sale__img1.png">
+                        <img src="images/sale__img2.png">
+                        <img src="images/sale__img3.png">
+                        <img src="images/sale__img4.png">
+                    </div>
+                        <h5 class="item__title">ZENA</h5>
+                        <p class="item__text">мягкий стул, барный стул, розовый, модерн</p>
+                        <div class="item__footer">
+                            <p class="item__price_new">12 600 ₽</p>
+                        </div>
+                </div>
+                <div class="product__similar__item">
+                    <div class="images">
+                        <img src="images/sale__img1.png">
+                        <img src="images/sale__img2.png">
+                        <img src="images/sale__img3.png">
+                        <img src="images/sale__img4.png">
+                    </div>
+                        <h5 class="item__title">ZENA</h5>
+                        <p class="item__text">мягкий стул, барный стул, розовый, модерн</p>
+                        <div class="item__footer">
+                            <div class="item__price">
+                                <p class="item__price_new">12 600 ₽</p>
+                                <p class="item__price_last">38 200 ₽</p>
+                            </div>
+                        </div>
+                    <img src="images/sale__icon.png" alt="" class="item__sale_icon">
+                </div>
+                <div class="product__similar__item">
+                    <div class="images">
+                        <img src="images/sale__img1.png">
+                        <img src="images/sale__img2.png">
+                        <img src="images/sale__img3.png">
+                        <img src="images/sale__img4.png">
+                    </div>
+                        <h5 class="item__title">ZENA</h5>
+                        <p class="item__text">мягкий стул, барный стул, розовый, модерн</p>
+                        <div class="item__footer">
+                            <p class="item__price_new">12 600 ₽</p>
+                        </div>
+                </div>
+                <div class="product__similar__item">
+                    <div class="images">
+                        <img src="images/sale__img1.png">
+                        <img src="images/sale__img2.png">
+                        <img src="images/sale__img3.png">
+                        <img src="images/sale__img4.png">
+                    </div>
+                        <h5 class="item__title">ZENA</h5>
+                        <p class="item__text">мягкий стул, барный стул, розовый, модерн</p>
+                        <div class="item__footer">
+                            <p class="item__price_new">12 600 ₽</p>
+                        </div>
+                </div>
+            </div>
+            <span class="show__more__button">Показать ещё ></span>
+        </div>
+    </div>
+    <div id="delivery" class="delivery">
+        <div class="delivery__img">
+            <img class="img__menu" src="images/menu.png" alt="">
+            <div class="img__wrapper">
+                <img class="img__orange" src="images/orange.png" alt="">
+                <img class="img__gradient" src="images/gradient.png" alt="">
+            </div>
+        </div>
+        <div class="delivery__body">
+            <h2 class="delivery__title">Бесплатная доставка и каталог</h2>
+            <p class="delivery__text">Заполните форму и получите каталог и бесплатную доставку до транспортной компании</p>
+            <form action="" class="delivery__form">
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel" placeholder="+7 (---)">
+                <input type="email" placeholder="Email">
+                <button>Отправить заявку</button>
+            </form>
+            <p class="delivery__footer">нажимая на кнопку, вы даете согласие на обработку персональных данных</p>
+        </div>
+    </div>
+<div class="map">
+        <div class="map__info">
+            <h3 class="map__title">Контакты</h3>
+            <p class="map__adress map__text">428006, Россия, Чувашская республика,</br>г. Чебоксары, Складской проезд 10</p>
+            <p class="map__phone map__text">+7(996)643-43-30</p>
+            <p class="map__email map__text">info@verators.com</p>
+            <p class="map__worktime map__text">Пн. - Пт.: с 8:00 до 18:00</p>
+        </div>
+        <div id="map" style="width: 100%; height: 420px"></div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <img class="footer__logo" src="images/logo.svg" alt="">
+                <div class="footer__body">
+                    <div class="footer__item">
+                        <div class="footer__adress">
+                            <h5 class="footer__title">Контакты</h5>
+                            <p class="footer__text">428006, Россия, Чувашская республика, Чебовксары, Складской проезд, 10</p>  
+                        </div>
+                        <span class="footer__phone footer__title">
+                            +7 996 643 43 30
+                        </span>
+                        <div class="footer__worktime">
+                            <h5 class="footer__title">Время работы</h5>
+                            <p class="footer__text">ПН — ПТ | 8°° — 18°°</p>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <a class="help__link link__main" href="">Verators</a>
+                        <a class="help__link" href="">Каталог</a>
+                        <a class="help__link" href="about.html">О компании</a>
+                        <a class="help__link" href="">Контакты</a>
+                        <a class="help__link" href="">Адреса шоурумов</a>
+                        <a class="help__link" href="">В интерьере</a>
+                        <a class="help__link" href="">Доставка</a>
+                    </div>
+                    <div class="footer__item" >
+                        <a class="help__link link__main" href="">Помощь</a>
+                        <a class="help__link" href="">Процесс оплаты</a>
+                        <a class="help__link" href="">Возврат</a>
+                        <a class="help__link" href="">Контакты</a>
+                        <a class="help__link" href="">Дизайнерам и дилерам</a>
+                        <a class="help__link" href="">Реквизиты</a>
+                    </div>
+                </div>
+                <div class="footer__partners">
+                    <img src="images/mastercard__img.svg" alt="MasterCard">
+                    <img src="images/visa__img.svg" alt="VISA">
+                    <img src="images/mir__img.svg" alt="МИР">
+                    <img src="images/paykeeper__img.svg" alt="PayKeeper">
+                </div>
+                <div class="footer__rights">
+                    <a href="#">©2020 Verators</a>
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Пользовательское соглашение</a>
+                    <a href="#">Разработано Well Media</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="call hidden">
+        <div class="call__wrapper">
+            <button class="form__close"></button>
+            <form id="call__form" action="" class="call__form">
+                <input class="call__phone" type="tel" placeholder="+7 (---)">
+                <button class="call__button">Заказать звонок</button>
+            </form>
+            <p class="call__text">нажимая на кнопку, вы даете согласие на обработку персональных данных</p>
+        </div>
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
