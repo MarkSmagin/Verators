@@ -146,17 +146,53 @@
             <span>Комбинаций</span>
           </div>
     
-          <div class="why__we__item">
+          <div class="why__we__item legs__item">
+            <round-slider
+                class="round__slider__legs"
+                value="00"
+                startAngle="-10"
+                arcLength="200"
+                style="--round-slider-bar-color: #DEB765"
+                rtl
+              ></round-slider>
             <div class="why__we__img__wrap">
-              <img class="why__we__main__img" src="images/why__we2.png" alt="">
+              <div class="legs__img__wrap">
+                <img class="why__we__img__active" src="images/ножки/IMG_5785.PNG" alt="" data-legs-num="0">
+                <img src="images/ножки/IMG_5786.PNG" alt="" data-legs-num="1">
+                <img src="images/ножки/IMG_5787.PNG" alt="" data-legs-num="2">
+                <img src="images/ножки/IMG_5788.PNG" alt="" data-legs-num="3">
+                <img src="images/ножки/IMG_5789.PNG" alt="" data-legs-num="4">
+                <img src="images/ножки/IMG_5790.PNG" alt="" data-legs-num="5">
+                <img src="images/ножки/IMG_5791.PNG" alt="" data-legs-num="6">
+                <img src="images/ножки/IMG_5792.PNG" alt="" data-legs-num="7">
+                <img src="images/ножки/IMG_5793.PNG" alt="" data-legs-num="8">
+                <img src="images/ножки/IMG_5794.PNG" alt="" data-legs-num="9">
+              </div>
               <img class="why__we__sub__img" src="images/why__we2__sub.png" alt="">
             </div>
             <span>Видов ножек</span>
           </div>
 
-          <div class="why__we__item">
+          <div class="why__we__item backs__item">
+            <round-slider
+              class="round__slider__seats"
+              value="00"
+              arcLength="180"
+              startAngle="180"
+            ></round-slider>
             <div class="why__we__img__wrap">
-              <img class="why__we__main__img" src="images/why__we3.png" alt="">
+              <div class="backs__img__wrap">
+                <img class="why__we__img__active" src="images/спинки/01.png" alt="" data-backs-num="0">
+                <img src="images/спинки/02.png" alt="" data-backs-num="1">
+                <img src="images/спинки/03.png" alt="" data-backs-num="2">
+                <img src="images/спинки/04.png" alt="" data-backs-num="3">
+                <img src="images/спинки/05.png" alt="" data-backs-num="4">
+                <img src="images/спинки/06.png" alt="" data-backs-num="5">
+                <img src="images/спинки/07.png" alt="" data-backs-num="6">
+                <img src="images/спинки/08.png" alt="" data-backs-num="7">
+                <img src="images/спинки/09.png" alt="" data-backs-num="8">
+                <img src="images/спинки/10.png" alt="" data-backs-num="9">
+              </div>
               <img class="why__we__sub__img" src="images/why__we3__sub.png" alt="">
             </div>
             <span>Видов сиденья</span>
@@ -295,6 +331,7 @@
             <p class="call__text">нажимая на кнопку, вы даете согласие на обработку персональных данных</p>
         </div>
     </div>
+    <script src="round-slider.bundle.js" type="module"></script>
     <script src="jquery-3.6.0.min.js"></script>
     <script src="jquery-ui.min.js"></script>
     <script src="slick/slick.min.js"></script>

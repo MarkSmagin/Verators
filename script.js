@@ -391,3 +391,74 @@ $(document).ready(function(){
     myMap.geoObjects.add(myPlacemark);
   }
 })
+
+// Слайдер картинок со слайдбаром
+let step = Math.ceil(100 / $('.legs__img__wrap img').length);
+let minRange = 0;
+let maxRange = step;
+const rangeLimits = [
+  [minRange, maxRange]
+];
+let currentStep = 0;
+let legsCurrentValue = 0;
+let backsCurrentValue = 0;
+
+for(let i = 1; i < 100; i++){
+  if(i % step === 0){
+    minRange = minRange + step;
+    maxRange = maxRange + step;
+    rangeLimits.push([minRange + 1, maxRange]);
+  }
+}
+
+// Скрипты для блока с ножками
+const setValueLegs = function (value) {
+  if (document.querySelector(".round__slider__legs").value === undefined) return;
+  document.querySelector(".round__slider__legs").value = value;
+};
+
+document.querySelector(".round__slider__legs").addEventListener("value-changed", function (ev) {
+  if (ev.detail.value !== undefined) setValueLegs(ev.detail.value, false);
+});
+
+document.querySelector(".round__slider__legs").addEventListener("value-changing", function (ev) {
+  if (ev.detail.value !== undefined) setValueLegs(ev.detail.value, true);
+  if (ev.detail.value % step === 0) {
+    legsCurrentValue = ev.detail.value;
+  }
+  if (ev.detail.value > legsCurrentValue){
+    $('.legs__img__wrap img').removeClass('why__we__img__active');
+    $(`[data-legs-num="${Math.ceil(legsCurrentValue/10)}"]`).addClass('why__we__img__active');
+  } else {
+    if(ev.detail.value > 0){
+      $('.legs__img__wrap img').removeClass('why__we__img__active');
+      $(`[data-legs-num="${Math.ceil(legsCurrentValue/10)-1}"]`).addClass('why__we__img__active');
+    }
+  }
+});
+
+// Скрипты для блока с сиденьями
+const setValueSeats = function (value) {
+  if (document.querySelector(".round__slider__seats").value === undefined) return;
+  document.querySelector(".round__slider__seats").value = value;
+};
+
+document.querySelector(".round__slider__seats").addEventListener("value-changed", function (ev) {
+  if (ev.detail.value !== undefined) setValueSeats(ev.detail.value, false);
+});
+
+document.querySelector(".round__slider__seats").addEventListener("value-changing", function (ev) {
+  if (ev.detail.value !== undefined) setValueSeats(ev.detail.value, true);
+  if (ev.detail.value % step === 0) {
+    backsCurrentValue = ev.detail.value;
+  }
+  if (ev.detail.value > backsCurrentValue){
+    $('.backs__img__wrap img').removeClass('why__we__img__active');
+    $(`[data-backs-num="${Math.ceil(backsCurrentValue/10)}"]`).addClass('why__we__img__active');
+  } else {
+    if(ev.detail.value > 0){
+      $('.backs__img__wrap img').removeClass('why__we__img__active');
+      $(`[data-backs-num="${Math.ceil(backsCurrentValue/10)-1}"]`).addClass('why__we__img__active');
+    }
+  }
+});
