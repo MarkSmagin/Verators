@@ -2635,7 +2635,7 @@ label.hidden__filter__characteristic__checkbox__checked::before {
 }
 
 .legs__img__wrap img,
-.backs__img__wrap img{
+.seats__img__wrap img{
   opacity: 0;
   width: 100%;
   height: 100%;
@@ -2648,14 +2648,14 @@ label.hidden__filter__characteristic__checkbox__checked::before {
 
 }
 .legs__img__wrap,
-.backs__img__wrap{
+.seats__img__wrap{
   position: absolute;
   bottom: 10px;
   height: 350px;
   width: 300px;
 }
 .legs__item .why__we__img__wrap,
-.backs__item .why__we__img__wrap{
+.seats__item .why__we__img__wrap{
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
